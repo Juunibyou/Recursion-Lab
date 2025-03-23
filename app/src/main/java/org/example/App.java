@@ -4,11 +4,20 @@
 package org.example;
 
 public class App {
-    public String getGreeting() {
-        return "Hello World!";
-    }
-
     public static void main(String[] args) {
-        System.out.println(new App().getGreeting());
+    
+    TriangleNumberCalculator calculate = new TriangleNumberCalculator();
+
+    System.out.println(calculate.value(1));
+    System.out.println(calculate.value(2));
+    System.out.println(calculate.value(4));
+
+    System.out.println(calculate.add(1, 1));
+    System.out.println(calculate.add(2, 3));
+    System.out.println(calculate.add(3, 4));
+
+    System.out.println(calculate.subtract(1, 1));
+    System.out.println(calculate.subtract(2, 3));
+    System.out.println(calculate.subtract(3, 4));
     }
 }
